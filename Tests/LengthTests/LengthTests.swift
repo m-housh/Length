@@ -87,7 +87,7 @@ class LengthTests: XCTestCase {
         ]
         
         for expected in expectedValues {
-            let length = Length(testValue, type: expected.type)
+            let length = Length(testValue, expected.type)
             let converted = length.convert(to: testType)
             XCTAssertEqual(expected.result,
                            round(converted.value * 100) / 100)

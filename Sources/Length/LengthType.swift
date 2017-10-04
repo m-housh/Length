@@ -5,13 +5,13 @@
 //  Created by Michael Housh on 10/3/17.
 //
 
-enum LengthType {
-    /* Represents the units of length.
+public enum LengthType {
+    /* Represents the units of length and their common symbols.
      
     */
     case inches, feet, meters, centimeters
     
-    var symbol: String {
+    public var symbol: String {
         switch self {
         case .inches:
             return "in"
